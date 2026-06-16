@@ -1,0 +1,16 @@
+{
+  "name": "tfms-iptv-panel",
+  "version": "1.0.5-no-kv",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "d1:create": "wrangler d1 create tfms-db",
+    "d1:migrate:local": "wrangler d1 migrations apply tfms-db --local",
+    "d1:migrate:remote": "wrangler d1 migrations apply tfms-db --remote"
+  },
+  "devDependencies": {
+    "wrangler": "latest"
+  }
+}
